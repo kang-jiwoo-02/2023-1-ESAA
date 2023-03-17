@@ -1,0 +1,93 @@
+.pop()  가장 마지막 것 제거한 후 남은 것들
+list()   리스트 변환
+str()   문자열 변환
+range(시작,끝,간격)
+.count("a")     자료에서 a의 개수 출력
+.sort()   알파벳 순으로 정렬. 등등 오름차순으로 정렬  = sorted(자료명)
+.sort(reverse=True)   내림차순으로 정렬
+
+numbers = [2, -1, 79, 33, -45]
+doubled = [num * 2 for num in numbers]
+
+기본값 설정 : ~~=기본값으로 설정할 것
+
+반올림해서 소수점 n자리까지 나타내기 :  round(자료명,n)
+
+ most_popular1, most_popular2, most_popular3 = top_tourist_locations_italy()
+
+문자열은 리스트의 일종! -> 인덱싱..슬라이싱,..가능!!
+
+\"   문자로서의 " 기능!
+
+'''
+def get_length(word):
+  counter = 0
+  for letter in word:
+    counter += 1
+  return counter
+'''
+
+little_string in big_string   -> True False 출력
+
+- 두 문자열에서 공통된 문자 출력하는 함수
+ '''
+ def common_letters(string_one, string_two):
+  common = []
+  for letter in string_one:
+    if (letter in string_two) and not (letter in common):
+      common.append(letter)
+  return common
+'''
+
+for i in range(0, len(user_name)):
+
+
+.lower() returns the string with all lowercase characters.
+.upper() returns the string with all uppercase characters.
+.title() returns the string in title case, which means the first letter of each word is capitalized.
+.split()    띄어쓰기 단위로 나누기
+.split("a")   a단위로 나누기
+
+
+'''
+author_last_names = []
+for name in author_names:
+  author_last_names.append(name.split()[-1])
+'''
+
+.strip()    공백 제거
+.strip('i')   문자 i 제거
+
+
+love_maybe_lines_stripped = []
+
+for line in love_maybe_lines:
+  love_maybe_lines_stripped.append(line.strip())
+
+
+.replace(a,b)   a대신 b로 대체
+.find()
+.format()
+def favorite_song_statement(song, artist):
+  return "My favorite song is {} by {}.".format(song, artist)
+
+from matplotlib import pyplot as plt
+
+
+딕셔너리에서 key는 리스트가 될 수 없다!
+
+'''
+animals_in_zoo = {}
+animals_in_zoo["zebras"] = 8
+
+sensors.update({"pantry": 22, "guest room": 25, "patio": 34})
+'''
+
+'''
+names = ['Jenny', 'Alexus', 'Sam', 'Grace']
+heights = [61, 70, 67, 64]
+Python allows you to create a dictionary using a dict comprehension, with this syntax:
+
+students = {key:value for key, value in zip(names, heights)}
+#students is now {'Jenny': 61, 'Alexus': 70, 'Sam': 67, 'Grace': 64}
+'''
